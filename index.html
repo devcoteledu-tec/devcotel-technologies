@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devcotel | Advanced AI Engineering & Digital Strategy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .heading-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .tag-shadow {
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes pulse-scale {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        .animate-float-delayed {
+            animation: float 8s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        .animate-float-slow {
+            animation: float 10s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+        .animate-spin-slow {
+            animation: spin-slow 20s linear infinite;
+        }
+        .animate-pulse-scale {
+            animation: pulse-scale 4s ease-in-out infinite;
+        }
+
+        /* Premium Mantra Animation */
+        @keyframes mantra-bg-shift {
+            0% { background-position: 0% 50%; background-size: 150% auto; }
+            50% { background-position: 100% 50%; background-size: 180% auto; }
+            100% { background-position: 0% 50%; background-size: 150% auto; }
+        }
+
+        .premium-animated-mantra {
+            background-image: url('https://images.stockcake.com/public/6/6/e/66eddd94-2c77-40f1-a442-aeab9f7c136e/vivid-color-burst-stockcake.jpg');
+            background-repeat: no-repeat;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-stroke: 0px transparent;
+            animation: mantra-bg-shift 20s ease-in-out infinite;
+            display: inline-block;
+            word-spacing: 0.25em;
+            letter-spacing: -0.02em;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));
+            line-height: 1.1;
+            padding-bottom: 0.1em;
+        }
+
+        /* Drop-Fall Animation */
+        @keyframes drop-fall {
+            0% { transform: translateY(-30px); opacity: 0; filter: blur(5px); }
+            100% { transform: translateY(0); opacity: 1; filter: blur(0); }
+        }
+
+        .animate-drop-fall {
+            display: inline-block;
+            animation: drop-fall 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            opacity: 0;
+        }
+
+        /* Left-to-Right Marquee */
+        @keyframes marquee-ltr {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        .animate-marquee-ltr {
+            display: flex;
+            width: fit-content;
+            animation: marquee-ltr 30s linear infinite;
+        }
+
+        /* Vertical Top-to-Bottom Marquee */
+        @keyframes marquee-v-ttb {
+            0% { transform: translateY(-50%); }
+            100% { transform: translateY(0); }
+        }
+        .animate-marquee-v-ttb {
+            display: flex;
+            flex-direction: column;
+            animation: marquee-v-ttb 25s linear infinite;
+        }
+
+        .marquee-container {
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        }
+
+        .marquee-v-container {
+            mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+        }
+    </style>
+    <script>
+      // Shim process.env globally to prevent build-time tracing errors
+      var process = { env: { API_KEY: '' } };
+      window.process = process;
+    </script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+      }
+    }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

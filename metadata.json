@@ -1,0 +1,9 @@
+
+{
+  "name": "Devcotel - AI-Driven Software Development",
+  "description": "Devcotel leverages cutting-edge AI to automate real-world problems, delivering 3x engagement, 5x ROI, and X/3 cost reduction through elite software engineering.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
