@@ -117,7 +117,7 @@ const App: React.FC = () => {
         return (
           <>
             <section id="home"><Hero onNavigate={navigateTo} /></section>
-            <section id="solutions" className="scroll-mt-20"><OperatingModel /></section>
+            <section id="solutions" className="scroll-mt-20"><OperatingModel onNavigate={navigateTo} /></section>
             <section id="impact" className="scroll-mt-20"><Impact onNavigate={navigateTo} /></section>
             <section id="stats" className="scroll-mt-20"><Stats /></section>
             <section id="services" className="scroll-mt-20"><Services /></section>
