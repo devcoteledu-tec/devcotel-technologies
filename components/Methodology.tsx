@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Plus } from 'lucide-react';
 
@@ -26,15 +25,15 @@ const GridItem: React.FC<GridItemProps> = ({ title, image, className }) => {
       
       {/* Label Reveal Animation */}
       <div className="absolute bottom-6 left-6 z-20 overflow-hidden">
-        <h3 className={`text-white font-black text-2xl tracking-tight transition-all duration-700 transform ${isHovered ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
+        <h3 className={`text-white font-black text-xl md:text-2xl tracking-tight transition-all duration-700 transform ${isHovered ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
           {title}
         </h3>
       </div>
       
-      {/* Subtle persistent label if not hovered (optional for accessibility/clarity) */}
+      {/* Subtle persistent label if not hovered */}
       {!isHovered && (
-        <div className="absolute bottom-6 left-6 z-10">
-          <h3 className="text-white/90 font-bold text-lg tracking-tight drop-shadow-md">
+        <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 z-10">
+          <h3 className="text-white/90 font-bold text-base md:text-lg tracking-tight drop-shadow-md">
             {title}
           </h3>
         </div>
@@ -52,20 +51,20 @@ export const Methodology: React.FC = () => {
   ];
 
   return (
-    <div className="py-24 bg-white font-sans">
+    <div className="py-20 md:py-24 bg-white font-sans">
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
+      <div className="max-w-7xl mx-auto px-6 mb-12 md:mb-16 text-center">
         {/* Vertical Bars from Reference */}
-        <div className="flex justify-center space-x-1.5 mb-2">
+        <div className="flex justify-center space-x-1.5 mb-4">
           {[...Array(9)].map((_, i) => (
-            <div key={i} className="w-[1px] h-6 bg-slate-200"></div>
+            <div key={i} className="w-[1px] h-4 md:h-6 bg-slate-200"></div>
           ))}
         </div>
         
-        <h2 className="text-6xl md:text-7xl font-bold text-slate-900 mb-4 tracking-tight serif-heading">
+        <h2 className="text-4xl md:text-7xl font-bold text-slate-900 mb-4 tracking-tight serif-heading">
           The next
         </h2>
-        <p className="text-2xl md:text-3xl font-light text-slate-500 max-w-4xl mx-auto leading-tight">
+        <p className="text-xl md:text-3xl font-light text-slate-500 max-w-4xl mx-auto leading-tight">
           We bring you powerful advantages to navigate your digital transformation
         </p>
       </div>
@@ -77,7 +76,7 @@ export const Methodology: React.FC = () => {
         <GridItem 
           title="Experience"
           image="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=1200&q=80"
-          className="aspect-square lg:aspect-auto lg:h-full"
+          className="aspect-square lg:aspect-auto lg:h-[600px]"
         />
 
         {/* Right Side: 2x2 Small Grid */}
@@ -106,15 +105,15 @@ export const Methodology: React.FC = () => {
       </div>
 
       {/* Bottom Navigation Section */}
-      <div className="max-w-7xl mx-auto px-6 mt-24">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 mt-16 md:mt-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-12">
           {bottomLinks.map((item, idx) => (
             <div key={idx} className="flex flex-col items-center group cursor-pointer">
-              <h4 className="text-xl md:text-2xl font-bold text-slate-900 text-center mb-6 max-w-[150px] leading-tight">
+              <h4 className="text-lg md:text-2xl font-bold text-slate-900 text-center mb-4 md:mb-6 px-2 leading-tight min-h-[3rem] flex items-center">
                 {item.title}
               </h4>
-              <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#0056d2]">
-                <Plus size={20} strokeWidth={3} />
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-black flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#0056d2]">
+                <Plus size={18} strokeWidth={3} className="md:w-5 md:h-5" />
               </div>
             </div>
           ))}
