@@ -60,7 +60,7 @@ export const Impact: React.FC<ImpactProps> = ({ onNavigate }) => {
             onClick={() => onNavigate('impact')}
             className="flex items-center space-x-3 group text-blue-400 hover:text-blue-300 transition-colors focus:outline-none"
           >
-            <span className="text-[11px] md:text-sm font-black uppercase tracking-[0.3em]">View Detailed Case Studies</span>
+            <span className="text-[11px] md:text-sm font-black uppercase tracking-[0.3em]"></span>
             <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-blue-400/30 flex items-center justify-center group-hover:bg-blue-400 group-hover:text-black transition-all">
               <ArrowRight className="w-4 md:w-5 h-4 md:h-5" />
             </div>
