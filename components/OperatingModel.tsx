@@ -62,7 +62,7 @@ export const OperatingModel: React.FC<OperatingModelProps> = ({ onNavigate }) =>
                 A transformation story of centum education to achieve faster time-to-market using mern stack and backend AI
               </h4>
               <button 
-                onClick={() => window.open('https://www.claysys.com/case-studies/centum-learning/', '_blank')}
+                onClick={() => window.open('https://www.centumeducation.in', '_blank')}
                 className="flex items-center text-[11px] md:text-[12px] font-black uppercase tracking-[0.25em] hover:opacity-70 transition-opacity mt-auto"
               >
                 View
@@ -73,10 +73,10 @@ export const OperatingModel: React.FC<OperatingModelProps> = ({ onNavigate }) =>
             <div className="flex flex-col border-t border-white/20 pt-6 md:border-t-0 md:pt-0">
               <span className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.25em] text-white/80 block mb-4 md:mb-6">Client Testimonial</span>
               <h4 className="text-[15px] md:text-[17px] font-bold leading-[1.4] mb-6 md:mb-8 pr-4">
-                NN Life Insurance Company Partners with Devcotel for its Cloud and Agile Transformation
+                ORION photography Company Partners with Devcotel for its leads and  Agile Transformation
               </h4>
               <button 
-                onClick={() => window.open('https://www.claysys.com/case-studies/nn-life-insurance/', '_blank')}
+                onClick={() => window.open('https://www.orionphotography.in', '_blank')}
                 className="flex items-center text-[11px] md:text-[12px] font-black uppercase tracking-[0.25em] hover:opacity-70 transition-opacity mt-auto"
               >
                 View
